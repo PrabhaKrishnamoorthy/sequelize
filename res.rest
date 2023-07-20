@@ -1,0 +1,66 @@
+POST http://localhost:8082/admin/register
+Content-Type: application/json
+
+{
+    "name":"Satyadev",
+    "password":"satya",
+    "conformPassword":"satya",
+    "email":"satyad@gmail.com"
+}
+
+###
+POST http://localhost:8082/admin/login
+Content-Type: application/json
+
+{
+    "email":"satyad@gmail.com",
+    "password":"satya"
+}
+###
+
+POST http://localhost:8082/api/employees/create
+Content-Type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhdHlhZEBnbWFpbC5jb20iLCJpYXQiOjE2ODk2NjA5NDMsImV4cCI6MTY4OTY2MTAwM30.U0UW5_6uziRxP8wrr4bK5UwCSUrTcD4uqppXfMTy5gE
+
+{
+    "employee_id":"1004",
+    "name":"Edward",
+    "email":"edward@gmail.com",
+    "mobile_no":"2334445456"
+}
+
+###
+GET http://localhost:8082/api/employees/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhdHlhZEBnbWFpbC5jb20iLCJpYXQiOjE2ODk2NjAwMzgsImV4cCI6MTY4OTY2MDA5OH0.-AgnSQf8u4wcKZvjm5GV3cClLmfjVUV7r6U1EvTpaqY
+###
+
+GET http://localhost:8082/api/employees/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhdHlhZEBnbWFpbC5jb20iLCJpYXQiOjE2ODk2NjExNTAsImV4cCI6MTY4OTY2MTIxMH0.bLH2C2yDDiyr9TSXuXdepsFwS5HLDkij-QDHxAvUU1E
+###
+PUT http://localhost:8082/api/employees/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhdHlhZEBnbWFpbC5jb20iLCJpYXQiOjE2ODk2NjE0MTIsImV4cCI6MTY4OTY2MTQ3Mn0.05iP0F0rMi8U2eCsW5rcQyEHteecYJT951qx6D2OTgQ
+
+{
+    "employee_id":"1001",
+    "name":"Amy",
+    "email":"amy@gmail.com",
+    "mobile_no":"2334445456"
+}
+###
+
+DELETE http://localhost:8082/api/employees/4
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhdHlhZEBnbWFpbC5jb20iLCJpYXQiOjE2ODk2NjE1MjMsImV4cCI6MTY4OTY2MTU4M30.H1peIeGiLm5Z9kaoX78xEbkuPfW4HLakYt19EfKnQWU
+###
+
+POST http://localhost:8082/admin/login
+Content-Type: application/json
+
+{
+    "email":"satyad@gmail.com",
+    "password":"satya"
+}
+###
